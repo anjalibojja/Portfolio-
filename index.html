@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bojja Anjali — Portfolio</title>
+    <meta name="description" content="Bojja Anjali — Student, aspiring software developer, and technology enthusiast. Explore my education, skills, projects, and certifications." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Navigation -->
+      <nav class="navbar" id="navbar">
+        <div class="nav-container">
+          <a href="#home" class="nav-logo" aria-label="Home">
+            <span class="nav-logo-mark">BA</span>
+            <span class="nav-logo-text">Bojja Anjali</span>
+          </a>
+          <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+            <li><a href="#contact" class="nav-link nav-contact-btn">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Hero / Home -->
+      <section id="home" class="hero">
+        <div class="hero-bg-grid" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Bojja Anjali</h1>
+          <p class="hero-tagline">Student · Aspiring Software Developer · Technology Enthusiast</p>
+          <p class="hero-description">
+            Welcome to my personal portfolio. I'm passionate about technology, software development,
+            and building projects that solve real problems.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56C20.22 21.38 23.5 17.08 23.5 12 23.5 5.73 18.27.5 12 .5z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/anjali-bojja-67b506439" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0z"/></svg>
+            </a>
+            <a href="https://www.kaggle.com/" target="_blank" rel="noopener" class="social-link" aria-label="Kaggle">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.82 23.76c-.02.12-.14.2-.26.18-.12-.02-.2-.14-.18-.26l.02-.1.42-2.2c.04-.2-.04-.4-.2-.52l-1.7-1.3-.06-.04-.1-.1c-.2-.2-.28-.5-.2-.78l.1-.42.02-.08.4-1.7c.04-.16-.04-.32-.2-.36l-1.7-.4c-.16-.04-.32.06-.36.22l-.4 1.68-.02.08-.1.42c-.08.28-.28.5-.56.6l-.1.04-.06.02-1.8.7c-.2.08-.34.26-.36.48l-.2 2.1-.02.1c-.02.12-.14.2-.26.18-.12-.02-.2-.14-.18-.26l.02-.1.2-2.1c.02-.22.16-.4.36-.48l1.8-.7.06-.02.1-.04c.16-.06.28-.2.32-.36l.1-.42.02-.08.4-1.68c.04-.16.06-.32.04-.48-.02-.14-.08-.28-.18-.4l-1.3-1.6-.06-.08-.1-.12c-.14-.18-.2-.4-.16-.62l.3-1.6.02-.08c.02-.12.14-.2.26-.18.12.02.2.14.18.26l-.02.08-.3 1.6c-.04.2.02.4.16.56l.1.12.06.08 1.3 1.6c.16.2.24.44.2.7l-.1.42-.02.08-.4 1.68c-.04.16.06.32.22.36l1.7.4c.16.04.32-.06.36-.22l.4-1.68.02-.08.1-.42c.06-.28.24-.5.5-.62l1.8-.86.06-.02.1-.04c.16-.08.26-.22.28-.4l.1-1.7.02-.1c.02-.12.14-.2.26-.18.12.02.2.14.18.26l-.02.1-.1 1.7c-.02.22-.16.4-.36.48l-1.8.86-.06.02-.1.04c-.16.08-.26.22-.3.4l-.1.42-.02.08-.4 1.68c-.04.16.06.32.22.36l1.7.4c.16.04.32-.06.36-.22l.4-1.68.02-.08.1-.42c.06-.28.24-.5.5-.62l1.8-.86.06-.02.1-.04c.16-.08.26-.22.28-.4l.1-1.7.02-.1c.02-.12.14-.2.26-.18.12.02.2.14.18.26l-.02.1-.1 1.7c-.02.22-.16.4-.36.48l-1.8.86-.06.02-.1.04c-.16.08-.26.22-.3.4l-.1.42-.02.08-.4 1.68c-.04.16.06.32.22.36l1.7.4c.16.04.32-.06.36-.22l.42-1.76.02-.1c.02-.12.14-.2.26-.18zM6 20c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.45-1-1zm6-14c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.45-1-1zm6 8c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.45-1-1z"/></svg>
+            </a>
+          </div>
+        </div>
+        <a href="#about" class="hero-scroll" aria-label="Scroll to About">
+          <span class="hero-scroll-text">Scroll</span>
+          <span class="hero-scroll-line"></span>
+        </a>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-label">01</span>
+            <h2 class="section-title">About Me</h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-image reveal" data-delay="100">
+              <div class="about-image-frame">
+                <div class="about-image-placeholder">BA</div>
+                <div class="about-image-deco"></div>
+              </div>
+            </div>
+            <div class="about-text reveal" data-delay="200">
+              <p>
+                I am <strong>Bojja Anjali</strong>, a passionate student interested in technology,
+                software development, and learning new skills. I enjoy building projects, exploring
+                programming concepts, and improving my technical knowledge through practical work.
+              </p>
+              <p>
+                My journey in tech started with curiosity — taking things apart, understanding how they
+                work, and putting them back together better. That same curiosity drives me today as I
+                explore languages like <strong>C</strong>, <strong>Java</strong>, and
+                <strong>JavaScript</strong>, and work with databases, data structures, and web technologies.
+              </p>
+              <div class="about-stats">
+                <div class="about-stat">
+                  <span class="about-stat-num" data-count="8">0</span>
+                  <span class="about-stat-label">Skills</span>
+                </div>
+                <div class="about-stat">
+                  <span class="about-stat-num" data-count="4">0</span>
+                  <span class="about-stat-label">Projects</span>
+                </div>
+                <div class="about-stat">
+                  <span class="about-stat-num" data-count="3">0</span>
+                  <span class="about-stat-label">Certifications</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section section-alt">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-label">02</span>
+            <h2 class="section-title">Education</h2>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item reveal" data-delay="100">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span class="timeline-date">2022 — Present</span>
+                <h3 class="timeline-title">Bachelor of Technology</h3>
+                <p class="timeline-org">Computer Science & Engineering</p>
+                <p class="timeline-desc">
+                  Pursuing my B.Tech with a focus on software development, data structures,
+                  computer organization, and modern web technologies.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item reveal" data-delay="200">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span class="timeline-date">2020 — 2022</span>
+                <h3 class="timeline-title">Intermediate Education</h3>
+                <p class="timeline-org">MPC — Mathematics, Physics, Chemistry</p>
+                <p class="timeline-desc">
+                  Completed higher secondary education with a strong foundation in
+                  mathematics and analytical problem-solving.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item reveal" data-delay="300">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card">
+                <span class="timeline-date">2020</span>
+                <h3 class="timeline-title">Secondary Education</h3>
+                <p class="timeline-org">10th Standard — SSC</p>
+                <p class="timeline-desc">
+                  Completed secondary schooling with distinction, developing a keen interest
+                  in science and technology.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-label">03</span>
+            <h2 class="section-title">Skills</h2>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card reveal" data-delay="100">
+              <h3 class="skill-category">Programming Languages</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">SQL</span>
+              </div>
+            </div>
+            <div class="skill-card reveal" data-delay="200">
+              <h3 class="skill-category">Web Technologies</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">Responsive Design</span>
+              </div>
+            </div>
+            <div class="skill-card reveal" data-delay="300">
+              <h3 class="skill-category">Core CS</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Data Structures</span>
+                <span class="skill-tag">Computer Organization</span>
+                <span class="skill-tag">DBMS</span>
+              </div>
+            </div>
+            <div class="skill-card reveal" data-delay="400">
+              <h3 class="skill-category">Tools & Platforms</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">VS Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-label">04</span>
+            <h2 class="section-title">Projects</h2>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card reveal" data-delay="100">
+              <div class="project-card-top">
+                <span class="project-icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/></svg>
+                </span>
+                <div class="project-links-small">
+                  <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub repo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56C20.22 21.38 23.5 17.08 23.5 12 23.5 5.73 18.27.5 12 .5z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">Personal Portfolio Website</h3>
+              <p class="project-desc">
+                A responsive portfolio website showcasing my education, technical skills,
+                projects, and professional profile. Built with HTML, CSS, and JavaScript,
+                deployed via GitHub and Vercel.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Vercel</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/" target="_blank" rel="noopener" class="project-link">GitHub</a>
+                <a href="#" target="_blank" rel="noopener" class="project-link project-link-demo">Live Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-delay="200">
+              <div class="project-card-top">
+                <span class="project-icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </span>
+                <div class="project-links-small">
+                  <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub repo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56C20.22 21.38 23.5 17.08 23.5 12 23.5 5.73 18.27.5 12 .5z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">Online Shopping Cart</h3>
+              <p class="project-desc">
+                A web-based shopping cart interface created using HTML, CSS, and JavaScript.
+                Features include adding/removing items, quantity updates, and dynamic total
+                price calculation.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/" target="_blank" rel="noopener" class="project-link">GitHub</a>
+                <a href="#" target="_blank" rel="noopener" class="project-link project-link-demo">Live Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-delay="300">
+              <div class="project-card-top">
+                <span class="project-icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h16v3"/><path d="M9 20h6M12 4v16"/></svg>
+                </span>
+                <div class="project-links-small">
+                  <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub repo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56C20.22 21.38 23.5 17.08 23.5 12 23.5 5.73 18.27.5 12 .5z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">Student Management System</h3>
+              <p class="project-desc">
+                A simple student record management application that allows adding, viewing,
+                and managing student data. Demonstrates CRUD operations and database concepts
+                using SQL and Java.
+              </p>
+              <div class="project-tags">
+                <span>Java</span>
+                <span>SQL</span>
+                <span>DBMS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/" target="_blank" rel="noopener" class="project-link">GitHub</a>
+                <a href="#" target="_blank" rel="noopener" class="project-link project-link-demo">Live Demo</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-delay="400">
+              <div class="project-card-top">
+                <span class="project-icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+                </span>
+                <div class="project-links-small">
+                  <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub repo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56C20.22 21.38 23.5 17.08 23.5 12 23.5 5.73 18.27.5 12 .5z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">Weather App</h3>
+              <p class="project-desc">
+                A weather application that fetches and displays real-time weather data for any
+                city. Built with JavaScript using a public weather API with a clean, intuitive
+                interface.
+              </p>
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>API</span>
+                <span>CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/" target="_blank" rel="noopener" class="project-link">GitHub</a>
+                <a href="#" target="_blank" rel="noopener" class="project-link project-link-demo">Live Demo</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certifications" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-label">05</span>
+            <h2 class="section-title">Certifications</h2>
+          </div>
+          <div class="cert-grid">
+            <div class="cert-card reveal" data-delay="100">
+              <div class="cert-badge">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5L17 22l-5-3-5 3 1.5-8.5"/></svg>
+              </div>
+              <h3 class="cert-title">Web Development Fundamentals</h3>
+              <p class="cert-issuer">Online Certification Platform</p>
+              <span class="cert-date">2024</span>
+            </div>
+            <div class="cert-card reveal" data-delay="200">
+              <div class="cert-badge">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <h3 class="cert-title">Java Programming</h3>
+              <p class="cert-issuer">NPTEL / Courseera</p>
+              <span class="cert-date">2024</span>
+            </div>
+            <div class="cert-card reveal" data-delay="300">
+              <div class="cert-badge">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+              </div>
+              <h3 class="cert-title">Data Structures & Algorithms</h3>
+              <p class="cert-issuer">Online Certification Platform</p>
+              <span class="cert-date">2023</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resume -->
+      <section id="resume" class="section section-alt">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-label">06</span>
+            <h2 class="section-title">Resume</h2>
+          </div>
+          <div class="resume-content reveal" data-delay="100">
+            <div class="resume-info">
+              <h3 class="resume-heading">My Resume</h3>
+              <p class="resume-text">
+                Download my resume to learn more about my education, skills, projects,
+                and experience. It contains a detailed overview of my academic journey
+                and technical qualifications.
+              </p>
+              <a href="#" class="btn btn-primary" id="resumeBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                Download Resume
+              </a>
+              <p class="resume-note" id="resumeNote" hidden>
+                Add your resume PDF file to the project folder and link it here to enable download.
+              </p>
+            </div>
+            <div class="resume-preview">
+              <div class="resume-preview-doc">
+                <div class="resume-preview-line w-80"></div>
+                <div class="resume-preview-line w-60"></div>
+                <div class="resume-preview-line w-40"></div>
+                <div class="resume-preview-gap"></div>
+                <div class="resume-preview-line w-100"></div>
+                <div class="resume-preview-line w-90"></div>
+                <div class="resume-preview-line w-95"></div>
+                <div class="resume-preview-line w-70"></div>
+                <div class="resume-preview-gap"></div>
+                <div class="resume-preview-line w-50"></div>
+                <div class="resume-preview-line w-85"></div>
+                <div class="resume-preview-line w-75"></div>
+                <div class="resume-preview-gap"></div>
+                <div class="resume-preview-line w-60"></div>
+                <div class="resume-preview-line w-100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-label">07</span>
+            <h2 class="section-title">Contact</h2>
+          </div>
+          <div class="contact-wrap">
+            <div class="contact-info reveal" data-delay="100">
+              <h3 class="contact-heading">Let's Connect</h3>
+              <p class="contact-text">
+                Feel free to reach out for collaborations, opportunities, or just to say hello.
+                I'm always open to discussing new ideas and possibilities.
+              </p>
+              <div class="contact-items">
+                <a href="mailto:anjali.bojja@example.com" class="contact-item">
+                  <span class="contact-item-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+                  </span>
+                  <span class="contact-item-text">
+                    <span class="contact-item-label">Email</span>
+                    <span class="contact-item-value">anjali.bojja@example.com</span>
+                  </span>
+                </a>
+                <a href="https://www.linkedin.com/in/anjali-bojja-67b506439" target="_blank" rel="noopener" class="contact-item">
+                  <span class="contact-item-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0z"/></svg>
+                  </span>
+                  <span class="contact-item-text">
+                    <span class="contact-item-label">LinkedIn</span>
+                    <span class="contact-item-value">anjali-bojja-67b506439</span>
+                  </span>
+                </a>
+                <a href="https://github.com/" target="_blank" rel="noopener" class="contact-item">
+                  <span class="contact-item-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56C20.22 21.38 23.5 17.08 23.5 12 23.5 5.73 18.27.5 12 .5z"/></svg>
+                  </span>
+                  <span class="contact-item-text">
+                    <span class="contact-item-label">GitHub</span>
+                    <span class="contact-item-value">Bojja Anjali</span>
+                  </span>
+                </a>
+                <a href="https://www.kaggle.com/" target="_blank" rel="noopener" class="contact-item">
+                  <span class="contact-item-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.82 23.76c-.02.12-.14.2-.26.18-.12-.02-.2-.14-.18-.26l.02-.1.42-2.2c.04-.2-.04-.4-.2-.52l-1.7-1.3-.06-.04-.1-.1c-.2-.2-.28-.5-.2-.78l.1-.42.02-.08.4-1.7c.04-.16-.04-.32-.2-.36l-1.7-.4c-.16-.04-.32.06-.36.22l-.4 1.68-.02.08-.1.42c-.08.28-.28.5-.56.6l-.1.04-.06.02-1.8.7c-.2.08-.34.26-.36.48l-.2 2.1-.02.1c-.02.12-.14.2-.26.18-.12-.02-.2-.14-.18-.26l.02-.1.2-2.1c.02-.22.16-.4.36-.48l1.8-.7.06-.02.1-.04c.16-.06.28-.2.32-.36l.1-.42.02-.08.4-1.68c.04-.16.06-.32.04-.48-.02-.14-.08-.28-.18-.4l-1.3-1.6-.06-.08-.1-.12c-.14-.18-.2-.4-.16-.62l.3-1.6.02-.08c.02-.12.14-.2.26-.18.12.02.2.14.18.26l-.02.08-.3 1.6c-.04.2.02.4.16.56l.1.12.06.08 1.3 1.6c.16.2.24.44.2.7l-.1.42-.02.08-.4 1.68c-.04.16.06.32.22.36l1.7.4c.16.04.32-.06.36-.22l.4-1.68.02-.08.1-.42c.06-.28.24-.5.5-.62l1.8-.86.06-.02.1-.04c.16-.08.26-.22.28-.4l.1-1.7.02-.1c.02-.12.14-.2.26-.18.12.02.2.14.18.26l-.02.1-.1 1.7c-.02.22-.16.4-.36.48l-1.8.86-.06.02-.1.04c-.16.08-.26.22-.3.4l-.1.42-.02.08-.4 1.68c-.04.16.06.32.22.36l1.7.4c.16.04.32-.06.36-.22l.4-1.68.02-.08.1-.42c.06-.28.24-.5.5-.62l1.8-.86.06-.02.1-.04c.16-.08.26-.22.28-.4l.1-1.7.02-.1c.02-.12.14-.2.26-.18.12.02.2.14.18.26l-.02.1-.1 1.7c-.02.22-.16.4-.36.48l-1.8.86-.06.02-.1.04c-.16.08-.26.22-.3.4l-.1.42-.02.08-.4 1.68c-.04.16.06.32.22.36l1.7.4c.16.04.32-.06.36-.22l.42-1.76.02-.1c.02-.12.14-.2.26-.18.12.02.2.14.18.26l-.02.1-.42 1.76c-.04.16.06.32.22.36l1.7.4c.16.04.32-.06.36-.22l.42-1.76.02-.1c.02-.12.14-.2.26-.18.12.02.2.14.18.26z"/></svg>
+                  </span>
+                  <span class="contact-item-text">
+                    <span class="contact-item-label">Kaggle</span>
+                    <span class="contact-item-value">Bojja Anjali</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <form class="contact-form reveal" data-delay="200" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+              <p class="form-success" id="formSuccess" hidden>
+                Thank you! Your message has been sent successfully.
+              </p>
+              <p class="form-error" id="formError" hidden>
+                Please fill in all fields with valid information.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container footer-inner">
+          <div class="footer-left">
+            <span class="footer-mark">BA</span>
+            <span>Bojja Anjali</span>
+          </div>
+          <div class="footer-right">
+            <a href="#home">Back to Top</a>
+          </div>
+        </div>
+        <div class="container footer-copy">
+          <p>&copy; <span id="year"></span> Bojja Anjali. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
